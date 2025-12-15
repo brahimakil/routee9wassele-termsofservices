@@ -1,0 +1,16 @@
+[build]
+  # Publish directory (your static files)
+  publish = "."
+  
+  # Functions directory
+  functions = "netlify/functions"
+  
+  # Build command (none needed for static site)
+  command = "echo 'No build needed'"
+
+[functions]
+  # Node.js version for functions
+  node_bundler = "esbuild"
+  
+# Environment variables are configured in Netlify Dashboard
+# Do not commit .env file to Git!
